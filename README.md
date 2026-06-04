@@ -52,7 +52,17 @@ python app.py
 Accédez ensuite à **http://localhost:5000** dans votre navigateur.
 
 ## 🚀 Utilisation
-Vous pouvez distinguer dans le repo des images png au nom de ce qu'elles représentent comme par exemple "Screenshot-page-accueil-non-connecté.png" qui affiche la page d'accueil du site lorsqu'aucun utilisateur n'est en session. 
+## Aperçu de l'application
+
+### Page d'accueil sans connexion
+![Page d'accueil sans connexion](screenshots/accueil.png)
+
+### Connexion
+![Page connexion](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
 ### Inscription
 1. Cliquez sur "Créer un compte"
 2. Entrez un nom d'utilisateur unique
