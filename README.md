@@ -3,7 +3,7 @@
 Une application web moderne de prise de notes personnelles avec authentification utilisateur sécurisée.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square)
-![Flask](https://img.shields.io/badge/Flask-2.3+-green?style=flat-square)
+![Flask](https://img.shields.io/badge/Flask-3.1.2+-green?style=flat-square)
 ![SQLite](https://img.shields.io/badge/SQLite-3-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
 
@@ -21,7 +21,7 @@ Une application web moderne de prise de notes personnelles avec authentification
 | Composant | Technologie |
 |-----------|-------------|
 | **Backend** | Python 3.8+ |
-| **Framework Web** | Flask 2.3+ |
+| **Framework Web** | Flask 3.1.2+ |
 | **Base de données** | SQLite 3 |
 | **Sécurité** | Werkzeug (hashing passwords) |
 | **Frontend** | HTML5 + CSS3 + JavaScript |
