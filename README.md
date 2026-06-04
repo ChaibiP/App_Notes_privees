@@ -1,4 +1,4 @@
-# 📝 Notes Privées
+#  Notes Privées
 
 Une application web moderne de prise de notes personnelles avec authentification utilisateur sécurisée.
 
@@ -7,7 +7,7 @@ Une application web moderne de prise de notes personnelles avec authentification
 ![SQLite](https://img.shields.io/badge/SQLite-3-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
 
-## 🎯 Fonctionnalités
+##  Fonctionnalités
 
 - ✅ **Authentification sécurisée** - Inscription et connexion avec hashing Werkzeug
 - ✅ **CRUD Complet** - Créer, lire, modifier, supprimer vos notes
@@ -16,7 +16,7 @@ Une application web moderne de prise de notes personnelles avec authentification
 - ✅ **Isolation des données** - Chaque utilisateur voit uniquement ses notes
 - ✅ **Protection des routes** - Décorateur `@login_required` pour les routes protégées
 
-## 🛠️ Stack Technologique
+##  Stack Technologique
 
 | Composant | Technologie |
 |-----------|-------------|
@@ -78,7 +78,7 @@ Accédez ensuite à **http://localhost:5000** dans votre navigateur.
 - Accédez à votre profil via "Mon Compte"
 - Changez votre nom d'utilisateur si nécessaire
 
-## 🏗️ Architecture du projet
+## Architecture du projet
 
 ```
 App_Notes_privees/
@@ -104,7 +104,7 @@ App_Notes_privees/
 └── notes.db              # Base de données SQLite (généré automatiquement)
 ```
 
-## 🔒 Sécurité
+## Sécurité
 
 L'application implémente plusieurs mesures de sécurité :
 
