@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+            <title>Mon Compte : <strong>{{ username }}</strong></title>
+        </head>
+        <body class="background">
+           <div class="container">
+            <h1>Mon nom : {{ username }}</h1>
+            <h2>Nombre de notes que j'ai postée : {{ nb_note }}</h2>
+            <form action="/updateaccount/{{user_id}}" method="GET">
+                <button>Modifier mon compte</button>
+            </form>
+            <form action="/" method="GET">
+                <button>Revenir a l'Accueil</button>
+            </form>
+          </div>  
+        </body>
+
+    </html>

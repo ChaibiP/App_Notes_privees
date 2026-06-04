@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajouter une note</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="background2">
+      <div class="container">
+        <form action="/add_note" method="POST">
+            <br>
+            <h1>Titre de la note :</h1>
+            <input type="hidden" name="userid" value="{{user_id}}">
+            <input name="title" placeholder="titre de votre note...">
+            <br>
+            <h2>Contenu de la note : </h2>
+            <textarea classe="contenu" name="content" placeholder="contenu de la note..."></textarea>
+            <button type="submit">Sauvegarder ma note</button>
+            <br>
+            <br>
+            <a href="/">Annuler</a>
+
+        </form>
+      </div>   
+    </body>
+
+</html>

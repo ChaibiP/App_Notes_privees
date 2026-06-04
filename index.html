@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Accueil Notes</title>
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="background">
+       <div class="container">
+        <h4 class="welcome">Bienvenu(e) sur notre site de notes privées !</h4>
+        <h6 class="connect">Vous etes connecté au nom de : <strong class="username">{{ username }}</strong></h6>
+        <br>
+        <br>
+        <br> 
+        {% if notes %}
+            {% for note in notes %}
+             <div class="note-card">
+                <h1 class="title">{{ note.title }}</h1>
+                 <form class="see" action="/notes/{{ note.id }}" method="GET">
+                    <button>Voir la note</button>
+                </form>
+                   <form class="update" action="/update/{{ note.id }}" method="GET">
+                    <button>Modifier la note</button>
+                </form>
+                <form class="delete" action="/delete/{{ note.id }}" method="POST">
+                    <button>Supprimer la note</button>
+                </form>
+              </div>  
+                <br>
+                <br>
+            {% endfor %}
+            <form class="logout" action="/logout" method="POST">
+                        <button>Se deconnecter</button>
+                    </form>
+              <form class="addnote" action="/add_note" method="GET">
+                    <button>Ajouter une note</button>
+                </form>
+                <form class="account" action="/my_account/{{user_id}}" method="GET">
+                    <button>Mon compte</button>
+                </form>
+        {% else %}
+                {% if empty_notes %}
+                    <h3>Vous n'avez pas de notes , Veuillez en ajouter une pour les voirs</h3>
+                    <a href="/add_note">Ajouter une note</a>
+                    <form action="/logout" method="POST">
+                        <button>Se deconnecter</button>
+                    </form>
+                {% else %}
+                    <h2>Veuillez vous connecter pour acceder a vos notes</h2>
+                    <a href="/login">Se connecter</a>
+                    <br>
+                    <h5>Vous n'avez pas de compte ?</h5> <a href="/register">Créer mon compte</a>
+                {% endif %}
+        {% endif %}
+       </div>
+    </body>
+</html>

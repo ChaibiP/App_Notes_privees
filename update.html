@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modifier la note</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="background2">
+       <div class="container">
+       <h1>Modifier la note : </h1>
+        <form action="/update/{{ note.id }}" method="POST">
+            <h2>Titre :</h2>
+            <input name="title" value="{{ note.title }}">
+            <br>
+            <h3>Contenu : </h3>
+            <textarea class="contenu" name="content">{{note.content}}</textarea>
+            <button type="submit">Sauvegarder la note</button>
+            <form  action="/" method="GET">
+                    <button>Annuler</button>
+                </form>
+        </form>
+       </div> 
+    </body>
+</html>

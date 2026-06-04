@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Se connecter</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        
+    </head>
+    <body class="background2">
+      <div class="container">
+        {% if error %}
+            <h2>Erreur de Connexion</h2>
+        {% endif %}
+        <h1>Veuillez vous Connecter ci dessous : </h1>
+        <form action="/login" method="POST">
+            <input name="name" placeholder="Nom...">
+            <input name="password" placeholder="Mot de passe...">
+            <button class="login" type="submit">Se Connecter</button>
+            <br>
+            <br>
+            <form  action="/" method="GET">
+                    <button>Accueil</button>
+                </form>
+        </form>
+      </div>  
+    </body>
+</html>

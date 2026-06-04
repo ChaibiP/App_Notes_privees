@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Créer un compte</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="background2">
+      <div class="container">
+        <h1>Créer un nouveau compte</h1>
+        <form action="/register" method="POST">
+            <input name="new_name" placeholder="Mon Nom...">
+            <input name="new_password" placeholder="Mon mot de passe...">
+            <button class="register" type="submit">Créer mon compte</button>
+            <br>
+            <br>
+            <form  action="/" method="GET">
+                    <button>Accueil</button>
+                </form>
+        </form>
+      </div>   
+    </body>
+</html>

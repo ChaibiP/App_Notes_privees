@@ -1,0 +1,82 @@
+.see{
+ font-family: fantasy;
+}
+
+.title{
+    border-color: black;
+    color: blue;
+    font-family: fantasy;
+}
+
+.welcome{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    border-color: black;
+}
+.connect{
+    font-size: medium;
+    bottom: 10px;
+    left: 10px;
+}
+.username{
+    font-size: medium;
+    color: blue;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; } 
+h2 { font-size: 2rem; font-weight: 600; } 
+h3 { font-size: 1.5rem; font-weight: 600; }
+
+.background{
+  
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("images/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: Arial, sans-serif;
+}
+
+.container { width: 90%; 
+    max-width: 1200px; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.note-card { 
+    width: 400px; 
+    background: rgba(255,255,255,0.85); 
+    backdrop-filter: blur(10px); 
+    border-radius: 16px; 
+    padding: 25px; 
+    margin: 20px 0; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+}
+
+.background2{
+  
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("images/background2.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: Arial, sans-serif;
+}
+textarea {
+  height: 200px;
+  width: 400px;
+}
