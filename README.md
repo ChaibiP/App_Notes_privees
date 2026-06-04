@@ -39,22 +39,13 @@ Une application web moderne de prise de notes personnelles avec authentification
 git clone https://github.com/ChaibiP/App_Notes_privees.git
 cd App_Notes_privees
 
-# 2. Créer un environnement virtuel
-python -m venv venv
-
-# 3. Activer l'environnement virtuel
-# Sur Linux/Mac:
-source venv/bin/activate
-# Sur Windows:
-venv\Scripts\activate
-
-# 4. Installer les dépendances
+# 2. Installer les dépendances
 pip install -r requirements.txt
 
-# 5. Initialiser la base de données (si nécessaire)
+# 3. Initialiser la base de données (si nécessaire)
 python db_init.py
 
-# 6. Lancer l'application
+# 4. Lancer l'application
 python app.py
 ```
 
