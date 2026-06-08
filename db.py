@@ -93,3 +93,6 @@ def set_username(user_id,new_username):
 def get_userid_by_id(note_id):
     result = db_fetch("SELECT user_id FROM notes WHERE id=?", (note_id,))
     return result[0]["user_id"] if result else None
+def get_note_search(search):
+    return db_fetch("SELECT * FROM notes WHERE title LIKE ? OR content LIKE ?",(search,search))
+

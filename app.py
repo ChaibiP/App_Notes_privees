@@ -172,6 +172,15 @@ def postupdateaccount(user_id):
     set_username(user_id,new_username)
     return redirect("/")
 
+@app.get("/search")
+def search():
+    query=request.args.get("q","")
+    search=f"%{query}%"
+    notes_trouvées=get_note_search(search)
+    user_id=session.get("user_id")
+    username=get_username(user_id)[0]
+    return render_template("index.html",notes=notes_trouvées,user_id=user_id,username=username,is_search=True)
+
 
             
 if __name__ == "__main__":
