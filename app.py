@@ -179,7 +179,7 @@ def search():
     notes_trouvées=get_note_search(search)
     user_id=session.get("user_id")
     username=get_username(user_id)[0]
-    return render_template("index.html",notes=notes_trouvées,user_id=user_id,username=username,is_search=True)
+    return render_template("index.html",notes=notes_trouvées,query=query,user_id=user_id,username=username,is_search=True)
 
 
             
