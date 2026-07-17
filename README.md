@@ -7,6 +7,8 @@ Une application web moderne de prise de notes personnelles avec authentification
 ![SQLite](https://img.shields.io/badge/SQLite-3-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
 
+DEMO DE L'APP : ![APP](https://app-notes-privees.onrender.com)
+
 ##  Fonctionnalités
 
 - ✅ **Authentification sécurisée** - Inscription et connexion avec hashing Werkzeug
