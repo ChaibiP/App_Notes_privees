@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, session
 from db import *
+import db_init
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from functools import wraps
