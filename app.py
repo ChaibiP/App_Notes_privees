@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
 from db import *
 import db_init
+import os
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from functools import wraps
@@ -8,7 +9,7 @@ from flask import session, redirect
 
 app = Flask(__name__)
 
-app.secret_key = "une_cle_secrete"
+app.secret_key = os.environ.get("SECRET_KEY", "29JF82fnsçqf_84U39TU389F839_hfhfçe_9898749T382")
 
 def login_required(func):
 
